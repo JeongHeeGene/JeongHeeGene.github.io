@@ -11,53 +11,58 @@ body {
 }
 
 ol, ul {
-list-style: none;
+	list-style: none;
 }
 
 a {
-text-decoration: none;
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	font-weight: 800;
 }
 
 img {
-vertical-align: top;
+	vertical-align: top;
 }
 
 button {
-outline: none;
-border: none;
-background: transparent;
+	outline: none;
+	border: none;
+	background: transparent;
 }
 
 input, textarea {
-outline: none;
-border: none;
+	outline: none;
+	border: none;
 }
 
 .flex_between {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .flex_start {
-display: flex;
-flex-wrap: wrap;
-align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 .flex_end {
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-end;
-align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .flex_center {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -68,6 +73,9 @@ align-items: center;
 :root {
 	--main--color: rgb(39, 193, 239);
 	/*--main--color:  rgb(0, 89, 73);*/
+
+	--percentage: 0;
+	--fill: #ff0;
 }
 
 .section {
@@ -76,7 +84,9 @@ align-items: center;
 	background-color: rgb(247, 247, 247);
 
 	text-align: center;
-	padding: 130px 0;
+	line-height: 24px;
+
+	padding: 120px 0;
 	margin: 20px 0;
 }
 
@@ -131,6 +141,8 @@ span {
 
 	text-align: center;
 	padding: 20px 50px 10px;
+
+	z-index: 999;
 }
 
 #gnb .gnb_menu li {
@@ -219,18 +231,190 @@ span {
 
 
 
+#skill {
 
-
-
-#portfolio {
-	background: url("img/w1-1.jpg") center center no-repeat; 
-	background-size:cover;
 }
 
-#portfolio div {
+.semi-donut {
+	position: relative;
+
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+
+	width: 200px;
+	height: 100px;
+	  
+	color: var(--fill);
+	font-size: 20px;
+	font-weight: 800;
+
+	overflow: hidden;
+	margin: 25px;
+}
+
+.semi-donut:after {
+	position: absolute;
+	content: '';
+	width: 200px;
+	height: 200px;
+	border: 30px solid;
+	border-color : rgba(0,0,0,0.15) rgba(0,0,0,0.15) var(--fill) var(--fill);
+	border-radius: 50%;
+
+	left: 0;
+	top: 0;
+	box-sizing : border-box;
+	transform: rotate( calc( 1deg * ( -45 + var(--percentage) * 1.8 ) ) );
+	/*animation : fillAnimation 1s ease-in;*/
+
+}
+
+.semi-donut.html {
+	--percentage: 80;
+	--fill: var(--main--color);
+}
+
+.semi-donut.css {
+	--percentage: 80;
+	--fill: var(--main--color);
+}
+
+.semi-donut.java {
+	--percentage: 80;
+	--fill: var(--main--color);
+}
+
+.semi-donut.ps {
+	--percentage: 90;
+	--fill: #555;
+}
+
+.semi-donut.ill {
+	--percentage: 90;
+	--fill: #555;
+}
+
+.semi-donut.ind {
+	--percentage: 90;
+	--fill: #555;
+}
+
+
+
+
+
+#portfolio h3 {
+	margin-bottom: 40px;
+}
+
+.contentsWrap {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.contentsWrap ul {
+	align-items: flex-start;
+	text-align: left;
+}
+
+.contentsWrap ul .editorial {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.contentsWrap img {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-bottom: 30px;
+
+	top: 0;
+	transition: top linear 0.2s;
+	z-index: 1;
+}
+
+.contentsWrap img:hover {
+	top: -10px;
+}
+
+.contentsWrap li button {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: rgba(0, 0, 0, .8);
+
+	border-radius: 50%;
+	cursor: pointer;
+	margin-bottom: 20px;
+
+	top: 0;
+	transition: top linear 0.2s;
+	z-index: 1;
+}
+
+.contentsWrap li button:hover {
+	top: -10px;
+}
+
+.contentsWrap li button a {
+	display: block;
 	width: 100%;
 	height: 100%;
+
+	font-size: 30px;
+	color: #fff;
+	line-height: 100px;
 }
+
+.contentsWrap li button a:hover {
+	font-weight: 800;
+	color: var(--main--color);
+}
+
+
+.txtWrap h4 {
+	display: inline-block;
+}
+
+.txtWrap h4:after {
+	display: inline-block;
+	content: '';
+	width: 1px;
+	height: 15px;
+	background-color: var(--main--color);
+	margin: 0 4px 0 9px;
+	vertical-align: -1px;
+}
+
+.txtWrap.etc h4:after {
+	content: none;
+}
+
+.txtWrap span {
+	color: #555;
+}
+
+.span_block {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.txtWrap ul li {
+	width: 250px;
+	list-style: disc;
+	list-style-position: inside;
+}
+
+.txtWrap ul li::marker {
+	color: var(--main--color);
+}
+
+
+
+
+
 
 
 
@@ -238,5 +422,20 @@ span {
 
 footer {
 	width: 100%;
-	height: 250px;
+	height: auto;
+	text-align: center;
 }
+
+#footer {
+	width: 70%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+#footer img {
+	width: 50px;
+	height: 50px;
+	margin: 0 5px 20px 5px;
+	border-radius: 50%;
+}
+
