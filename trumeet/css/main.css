@@ -1,0 +1,31 @@
+#gnb {
+	position: fixed;
+	max-width: 450px;
+	width: 100%;
+	height: auto;
+	padding: 35px 0 0px;
+	text-align: center;
+	border-bottom: 1px solid #E6E7E8;
+
+	z-index: 999;
+
+	/*background-color: #BBCFFF;*/
+}
+
+#gnb h1 a img {
+	/*position: relative;
+	left: 50%;
+	margin-left: -225px;*/
+	left: 50%;
+	transform: translateX(128%);
+	width: 128px;
+}
+
+#gnb .logOut {
+	margin-right: 40px;
+}
+
+
+.mainWrap {
+	padding-top: 100px;
+}
