@@ -349,6 +349,18 @@ footer .bottomMenu ul li .menuBox .btMenutxt {
 		max-width: 100%;
 	}
 
+	#gnb .topLogo {
+		width: 70%;
+	}
+
+	#gnb a h1 img {
+		/*position: relative;
+		left: 50%;
+		margin-left: -225px;*/
+		width: 128px;
+		transform: translateX(10%);
+	}
+
 	.mainWrap {
 		max-width: 100%;
 	}
@@ -364,17 +376,18 @@ footer .bottomMenu ul li .menuBox .btMenutxt {
 		padding: 0 10px;
 	}
 
-	.listWrap {
-
+	.mainWrap .mainMidd .middMenu {
+		width: 80%;
+		margin: 0;
+		padding: 0;
 	}
-
 
 	.listWrap .listBox {
 		margin: 5px 0;
 	}
 
 	.listWrap .listBox .listLeft {
-		max-width: 250px;
+		max-width: 200px;
 	}
 
 
