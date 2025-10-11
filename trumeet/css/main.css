@@ -9,16 +9,19 @@
 
 	z-index: 999;
 
-	/*background-color: #BBCFFF;*/
+	background-color: #fff;
 }
 
-#gnb h1 a img {
+#gnb .topLogo {
+	width: 80%;
+}
+
+#gnb a h1 img {
 	/*position: relative;
 	left: 50%;
 	margin-left: -225px;*/
-	left: 50%;
-	transform: translateX(128%);
 	width: 128px;
+	transform: translateX(30%);
 }
 
 #gnb .logOut {
@@ -41,6 +44,7 @@
 	position: absolute;
 	max-width: 450px;
 	width: 100%;
+	height: 100%;
 	margin-top: 87px;
 }
 
@@ -65,7 +69,9 @@
 
 .mainWrap .mainTop .topNum {
 	width: 32%;
-	height: 113px;
+/*	height: 113px;*/
+	height: auto;
+	padding: 20px 0;
 	background-color: #E6E7E8;
 	border-radius: 15px;
 	text-align: center;
@@ -116,12 +122,13 @@
 
 
 .mainWrap .mainMidd {
-	margin: 0 10px 5px;
-	padding: 0 39px;
+	background-color: #fff;
 }
 
 .mainWrap .mainMidd .middMenu {
 	width: 100%;
+	margin: 0 10px 5px;
+	padding: 0 39px;
 }
 
 .mainWrap .mainMidd .middMenu ul li {
@@ -150,6 +157,134 @@
 	letter-spacing: -.5px;
 }
 
+.listWrap {
+	width: 100%;
+	height: 100%;
+}
+
+.listWrap .listBox {
+/*	width: 100%;*/
+	margin: 1px 10px 5px;
+	padding: 14px 20px 13px;
+	border-radius: 10px;
+	border: 1px solid #E6E7E8;
+}
+
+.listWrap .listBox .listLeft h4 {
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: -.5px;
+	padding-bottom: 5px;
+}
+
+.listWrap .listBox .listLeft .icon {
+	margin-left: 8px;
+}
+
+.listWrap .listBox .listLeft p {
+	font-size: 14px;
+	letter-spacing: -.5px;
+	padding-bottom: 5px;
+}
+
+.listWrap .listBox .listLeft .listIn {
+	font-size: 13px;
+	margin-right: 10px;
+}
+
+.icon img {
+	height: 17px;
+}
+
+.sIcon img {
+	height: 15px;
+	transform: translateY(40%);
+}
+
+
+
+.listWrap .listBox .listLeft {
+	width: 100%;
+	max-width: 310px;
+}
+
+.listWrap .listBox .listRight {
+	width: 20%;
+	height: 100%;
+}
+
+.listWrap .listBox .listRight p {
+	font-size: 13px;
+	text-align: right;
+	margin: 1px 0 13px;
+}
+
+.listWrap .listBox .listRight .stateBtn {
+	width: 100%;
+	height: 40px;
+	padding: 0 13px;
+
+	background-color: #0A2689;
+	border-radius: 10px;
+}
+
+.listWrap .listBox .listRight .stateBtn button {
+	font-size: 13px;
+	font-weight: 500;
+/*	letter-spacing: -.6px;*/
+	color: #fff;
+}
+
+.listWrap .listBox .listRight .termiBtn {
+	width: 100%;
+	height: 40px;
+	padding: 0 13px;
+
+	background-color: #E6E7E8;
+	border-radius: 10px;
+}
+
+.listWrap .listBox .listRight .termiBtn button {
+	font-size: 13px;
+	font-weight: 500;
+/*	letter-spacing: -.6px;*/
+	color: #151515;
+}
+
+
+.mainWrap .moreBtnWrap {
+	width: 100%;
+	background-color: #fff;
+}
+
+.mainWrap .moreBtn {
+	width: 30%;
+	height: 46px;
+	margin: 10px 0 10px;
+
+	background-color: #285DE6;
+	border-radius: 10px;
+	transition-property: background-color;
+	transition-duration: 1s;
+}
+
+.mainWrap .moreBtn:hover {
+	background-color: #0A2689;
+}
+
+.mainWrap .moreBtn button {
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: -.6px;
+	color: #fff;
+}
+
+
+.blink100 {
+	width: 100%;
+	height: 80px;
+	background-color: #fff;
+}
 
 
 
@@ -163,6 +298,8 @@ footer {
 	border-top: 1px solid #E6E7E8;
 
 	z-index: 998;
+
+	background-color: #fff;
 }
 
 footer .bottomMenu {
@@ -193,8 +330,12 @@ footer .bottomMenu ul li p {
 	font-weight: 500;
 }
 
-footer .bottomMenu ul li img {
+footer .bottomMenu ul li .menuBox img {
 	width: 23px;
+}
+
+footer .bottomMenu ul li .menuBox .btMenutxt {
+	font-size: 14px;
 }
 
 
@@ -219,14 +360,31 @@ footer .bottomMenu ul li img {
 	}
 
 	.mainWrap .mainMidd {
-		margin: 5px 10px;
+		margin: 5px 0 0;
 		padding: 0 10px;
+	}
+
+	.listWrap {
+
+	}
+
+
+	.listWrap .listBox {
+		margin: 5px 0;
+	}
+
+	.listWrap .listBox .listLeft {
+		max-width: 250px;
 	}
 
 
 
 	footer {
 		max-width: 100%;
+	}
+
+	footer .bottomMenu ul li .menuBox .btMenutxt {
+		font-size: 12px;
 	}
 
 
