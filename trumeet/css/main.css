@@ -408,7 +408,7 @@ footer .bottomMenu ul li .menuBox .btMenutxt {
 
 
 	.listWrap .listBox .listLeft {
-		width: 60%;
+		width: 50%;
 /*		max-width: 100px;*/
 /*		background-color: #8E8EEF;*/
 	}
@@ -437,5 +437,6 @@ footer .bottomMenu ul li .menuBox .btMenutxt {
 
 
 }
+
 
 
