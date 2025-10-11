@@ -185,6 +185,11 @@
 	font-size: 14px;
 	letter-spacing: -.5px;
 	padding-bottom: 5px;
+
+/*	max-height: 40px;*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .listWrap .listBox .listLeft .listIn {
@@ -218,6 +223,7 @@
 	text-align: right;
 	margin: 1px 0 13px;
 }
+
 
 .listWrap .listBox .listRight .stateBtn {
 	width: 100%;
@@ -257,10 +263,11 @@
 	background-color: #fff;
 }
 
-.mainWrap .moreBtn {
+.moreBtnWrap .moreBtn {
 	width: 30%;
 	height: 46px;
-	margin: 10px 0 10px;
+	margin: 10px 0;
+	padding: 0 30px;
 
 	background-color: #285DE6;
 	border-radius: 10px;
@@ -268,11 +275,11 @@
 	transition-duration: 1s;
 }
 
-.mainWrap .moreBtn:hover {
+.moreBtnWrap .moreBtn:hover {
 	background-color: #0A2689;
 }
 
-.mainWrap .moreBtn button {
+.moreBtnWrap .moreBtn button {
 	font-size: 16px;
 	font-weight: 500;
 	letter-spacing: -.6px;
@@ -358,7 +365,11 @@ footer .bottomMenu ul li .menuBox .btMenutxt {
 		left: 50%;
 		margin-left: -225px;*/
 		width: 128px;
-		transform: translateX(10%);
+		transform: translateX(35%);
+	}
+
+	#gnb .logOut {
+		margin-right: 20px;
 	}
 
 	.mainWrap {
@@ -382,12 +393,24 @@ footer .bottomMenu ul li .menuBox .btMenutxt {
 		padding: 0;
 	}
 
+	.mainWrap .mainMidd .middMenu ul li img {
+		margin-right: 0;
+	}
+
+	.mainWrap .mainMidd .middMenu .middMenutxt {
+		font-size: 15px;
+	}
+
 	.listWrap .listBox {
 		margin: 5px 0;
 	}
 
 	.listWrap .listBox .listLeft {
-		max-width: 200px;
+/*		max-width: 50%;*/
+	}
+
+	.listWrap .listBox .listLeft .listIn {
+		margin-right: 5px;
 	}
 
 
