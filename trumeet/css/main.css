@@ -403,14 +403,26 @@ footer .bottomMenu ul li .menuBox .btMenutxt {
 
 	.listWrap .listBox {
 		margin: 5px 0;
+		padding: 14px 10px 13px;
 	}
 
+
 	.listWrap .listBox .listLeft {
-/*		max-width: 50%;*/
+		width: 70%;
+/*		max-width: 100px;*/
+/*		background-color: #8E8EEF;*/
+	}
+
+	.listWrap .listBox .listRight {
+		width: 25%;
 	}
 
 	.listWrap .listBox .listLeft .listIn {
 		margin-right: 5px;
+	}
+
+	.moreBtnWrap .moreBtn {
+		width: 50%;
 	}
 
 
